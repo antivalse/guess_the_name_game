@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Student Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <h1>Guess the Name Game: FED23 Edition</h1>
+      <br />
+      <h2>How to play:</h2>
+      <p class="rules">
+        1. pick a level between 1, 2 or 3 (10, 20 or maximum amount of
+        rounds)<br />
+        2. guess the name of student in pic <br />
+        3. If u guess the right name u get one point. If u guess the wrong name
+        U Get ZERO points <br />
+      </p>
+    </div>
+
+    <div class="level-buttons">
+      <button class="level1">Level 1</button>
+      <button class="level2">Level 2</button>
+      <button class="level3">Level 3</button>
+    </div>
+
+    <div class="content" id="question-area">
+      <img
+        id="img"
+        src="assets/images/startgameimg.jpg"
+        alt="image of student"
+      />
+      <div id="options">
+        <button id="option1" class="option">??????</button>
+        <button id="option2" class="option">??????</button>
+        <button id="option3" class="option">??????</button>
+        <button id="option4" class="option">??????</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="score"></div>
+      <p id="result-info"></p>
+      <p class="total-score"></p>
+      <span id="user-score"></span>
+    </div>
+    <div class="controller">
+      <button id="next">Get next pic!</button>
+      <button id="score-btn"></button>
+    </div>
+
+    <script src="assets/flags.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
